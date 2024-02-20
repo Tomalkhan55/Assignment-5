@@ -59,7 +59,7 @@
                 <h3 class="text-[#1DD100] text-xl lg:text-5xl font-bold lg:mb-5">P Paribahan</h3>
                 <p class="text-white lg:pb-8 lg:mb-5">Yes, you can run unit tests and view the result directly within the
                     App. The <br> integrated testing featured allow for a stream line.</p>
-                <button  class="bg-[#1DD100] text-black text-xl font-bold px-5 py-4 rounded-xl">Buy Tickets</button>
+                <button id="scroll-button" class="bg-[#1DD100] text-black text-xl font-bold px-5 py-4 rounded-xl">Buy Tickets</button>
             </div>
         </section>
         <!-- Best Offer Container -->
@@ -130,7 +130,7 @@
                             <div>
                                 <button
                                     class="flex px-3 py-2 gap-2 rounded-lg text-[#1DD100] bg-[#1DD10066] font-semibold"><img
-                                        src="images/seat-green.png" alt=""> <span>40</span>seats
+                                        src="images/seat-green.png" alt=""> <span id="total-seat">40</span>seats
                                     left</button>
                             </div>
                         </div>
@@ -169,7 +169,7 @@
             </div>
 
             <!-- ticket select container -->
-            <div class="flex flex-col lg:flex-row justify-between lg:mx-24 p-2 lg:p-10 rounded-2xl bg-white">
+            <div id="my-section" class="flex flex-col lg:flex-row justify-between lg:mx-24 p-2 lg:p-10 rounded-2xl bg-white">
                 <!-- seat selection container -->
                 <div class="lg:w-8/12">
                     <h5 class="text-2xl text-black font-semibold mb-3">Select your seat</h5>
@@ -191,48 +191,48 @@
                             <button class="btn"><i class="fa-regular fa-circle-up"></i></button>
                         </div>
                         <!-- All seats list -->
-                        <div class="grid grid-cols-4 grid-rows-10 gap-8">
-                            <button class="btn">A1</button>
-                            <button class="btn">A2</button>
-                            <button class="btn">A3</button>
-                            <button class="btn">A4</button>
-                            <button class="btn">B1</button>
-                            <button class="btn">B2</button>
-                            <button class="btn">B3</button>
-                            <button class="btn">B4</button>
-                            <button class="btn">C1</button>
-                            <button class="btn">C2</button>
-                            <button class="btn">C3</button>
-                            <button class="btn">C4</button>
-                            <button class="btn">D1</button>
-                            <button class="btn">D2</button>
-                            <button class="btn">D3</button>
-                            <button class="btn">D4</button>
-                            <button class="btn">E1</button>
-                            <button class="btn">E2</button>
-                            <button class="btn">E3</button>
-                            <button class="btn">E4</button>
-                            <button class="btn">F1</button>
-                            <button class="btn">F2</button>
-                            <button class="btn">F3</button>
-                            <button class="btn">F4</button>
-                            <button class="btn">G1</button>
-                            <button class="btn">G2</button>
-                            <button class="btn">G3</button>
-                            <button class="btn">G4</button>
-                            <button class="btn">H1</button>
-                            <button class="btn">H2</button>
-                            <button class="btn">H3</button>
-                            <button class="btn">H4</button>
-                            <button class="btn">I1</button>
-                            <button class="btn">I2</button>
-                            <button class="btn">I3</button>
-                            <button class="btn">I4</button>
-                            <button class="btn">J1</button>
-                            <button class="btn">J2</button>
-                            <button class="btn">J3</button>
-                            <button class="btn">J4</button>
-                        </div>
+                        <div id="main-seat" class="grid grid-cols-4 grid-rows-10 gap-8">
+                            <button id="A1" class="btn">A1</button>
+                            <button id="A2" class="btn">A2</button>
+                            <button id="A3" class="btn">A3</button>
+                            <button id="A4" class="btn">A4</button>
+                            <button id="B1" class="btn">B1</button>
+                            <button id="B2" class="btn">B2</button>
+                            <button id="B3" class="btn">B3</button>
+                            <button id="B4" class="btn">B4</button>
+                            <button id="C1" class="btn">C1</button>
+                            <button id="C2" class="btn">C2</button>
+                            <button id="C3" class="btn">C3</button>
+                            <button id="C4" class="btn">C4</button>
+                            <button id="D1" class="btn">D1</button>
+                            <button id="D2" class="btn">D2</button>
+                            <button id="D3" class="btn">D3</button>
+                            <button id="D4" class="btn">D4</button>
+                            <button id="E1" class="btn">E1</button>
+                            <button id="E2" class="btn">E2</button>
+                            <button id="E3" class="btn">E3</button>
+                            <button id="E4" class="btn">E4</button>
+                            <button id="F1" class="btn">F1</button>
+                            <button id="F2" class="btn">F2</button>
+                            <button id="F3" class="btn">F3</button>
+                            <button id="F4" class="btn">F4</button>
+                            <button id="G1" class="btn">G1</button>
+                            <button id="G2" class="btn">G2</button>
+                            <button id="G3" class="btn">G3</button>
+                            <button id="G4" class="btn">G4</button>
+                            <button id="H1" class="btn">H1</button>
+                            <button id="H2" class="btn">H2</button>
+                            <button id="H3" class="btn">H3</button>
+                            <button id="H4" class="btn">H4</button>
+                            <button id="I1" class="btn">I1</button>
+                            <button id="I2" class="btn">I2</button>
+                            <button id="I3" class="btn">I3</button>
+                            <button id="I4" class="btn">I4</button>
+                            <button id="J1" class="btn">J1</button>
+                            <button id="J2" class="btn">J2</button>
+                            <button id="J3" class="btn">J3</button>
+                            <button id="J4" class="btn">J4</button>
+                    id="  "     </div>
                     </div>
                 </div>
                 <!-- order confirfirm container -->
@@ -240,38 +240,32 @@
                     <h5 class="text-2xl text-black font-semibold mt-5 lg:mt-1">Select your seat</h5>
                     <br>
                     <hr><br>
-                    <!--  -->
-                    <div>
-                        <div class="bg-[#F7F8F8] rounded-2xl p-8">
+                    <!-- order place container -->
+                    <div id="order-place-container">
+                        <div id="selected-seat-container" class="bg-[#F7F8F8] rounded-2xl p-8">
                             <div class="flex justify-between">
-                                <p>seat <span>0</span></p>
-                                <p>class</p>
-                                <p>price</p>
+                                <p class="text-black text-lg">seat <span id="count-select-seat">0</span></p>
+                                <p class="text-black text-lg">class</p>
+                                <p class="text-black text-lg">price</p>
                             </div>
                             <hr><br>
-                            <div class="flex justify-between my-5">
-                                <p>c2</p>
-                                <p>Economy</p>
-                                <p>550</p>
+                            <div id="ordered-seat">
+
                             </div>
-                            <div class="flex justify-between my-5">
-                                <p>c2</p>
-                                <p>Economy</p>
-                                <p>550</p>
-                            </div>
+                            
                             <hr>
                             <div class="flex justify-between my-5">
                                 <p>Total price</p>
-                                <p>BDT <span>1100</span></p>
+                                <p>BDT <span id="total-price">00</span></p>
                             </div>
                             <div class="flex justify-between my-5">
-                                <input class="rounded-2xl border-none px-5 bg-white" type="text" name="" id=""
+                                <input class="rounded-2xl border-none px-5 bg-white" type="text" name="" id="coupon-input"
                                     placeholder="Have any coupons?">
-                                <button class="btn bg-[#1DD100]">Apply</button>
+                                <button id="coupon-apply" class="rounded-2xl px-5 py-3 bg-[#1DD100]">Apply</button>
                             </div>
                             <div class="flex justify-between my-5">
                                 <p class="flex">Grand Total</p>
-                                <p>BDT <span>00</span></p>
+                                <p>BDT <span id="grand-total">00</span></p>
                             </div>
                         </div>
                         <!-- customer info -->
@@ -331,7 +325,7 @@
         </div>
     </footer>
     <!-- javascript link -->
-    
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
